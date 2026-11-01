@@ -1,8 +1,8 @@
 --=========================================================================
--- Admin Tools - quick GM command panel for WOTLK 3.3.5a (TrinityCore / SPP)
+-- Admin Tools - quick GM command panel for WOTLK 3.3.5a (JainaCore MMORPG Engine)
 --
 -- Commands are sent as chat text starting with "." exactly as if you typed
--- them.  On TrinityCore the server intercepts these before they are spoken,
+-- them.  On JainaCore the server intercepts these before they are spoken,
 -- so nothing is broadcast as long as the account has GM access and the
 -- command is valid.  If a command is rejected it will appear in /say.
 --
@@ -30,7 +30,7 @@ local function RunCmd(cmd)
 	if cmd:sub(1, 1) ~= "." then cmd = "." .. cmd end
 	if #cmd > 255 then cmd = cmd:sub(1, 255) end
 
-	-- Normalización defensiva para AzerothCore 3.3.5a: .additemset -> .additem set
+	-- Normalización defensiva para JainaCore 3.3.5a: .additemset -> .additem set
 	cmd = cmd:gsub("^%.additemset%s+", ".additem set ")
 
 	-- Silent execution via editbox prevents rejected GM commands from leaking to public /say
@@ -388,7 +388,7 @@ AdminTools.ShowPage = ShowPage
 
 -- 5-man dungeons, grouped by expansion, ordered by level.  Teleports land
 -- just outside the entrance.  Most are ".tele <game_tele name>"; entries that
--- TrinityCore's stock game_tele lacks use raw ".go xyz X Y Z map" coordinates
+-- standard game_tele lacks use raw ".go xyz X Y Z map" coordinates
 -- instead (works on any core).  If a ".tele" one fails, use the Tele tab >
 -- "Lookup tele" box to find your server's name and edit it here.
 local DUNGEONS = {

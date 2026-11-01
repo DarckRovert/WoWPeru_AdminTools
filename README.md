@@ -1,7 +1,7 @@
 # 🛡️ Project Jaina — AdminTools (Panel Game Master & Administración)
 
 [![WoW Version](https://img.shields.io/badge/WoW-3.3.5a%20(12340)-blue.svg)](https://darckrovert.github.io/ProjectJaina_Web/)
-[![Core Compatibility](https://img.shields.io/badge/Core-JainaCore%20%7C%20TrinityCore-red.svg)](https://github.com/jainacore)
+[![Core Compatibility](https://img.shields.io/badge/Core-JainaCore%20C%2B%2B20-blue.svg)](https://github.com/jainacore)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-DarckRovert%2FProjectJaina__AdminTools-black?logo=github)](https://github.com/DarckRovert/ProjectJaina_AdminTools)
 [![Ecosistema](https://img.shields.io/badge/Ecosistema-Project%20Jaina%20(M%C3%B3dulo%20%2320)-gold.svg)](https://darckrovert.github.io/ProjectJaina_Web/)
